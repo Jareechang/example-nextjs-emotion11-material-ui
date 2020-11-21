@@ -9,10 +9,8 @@ const { extractCritical } = createEmotionServer(cache)
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
-
     const sheets = new ServerStyleSheets()
     const originalRenderPage = ctx.renderPage
-
     ctx.renderPage = () => {
       return (
         originalRenderPage({
@@ -20,7 +18,6 @@ export default class MyDocument extends Document {
         })
       )
     }
-
     const initialProps = await Document.getInitialProps(ctx)
     const styles = extractCritical(initialProps.html)
     return {

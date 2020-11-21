@@ -1,26 +1,40 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { css, cx } from '@emotion/css'
-import Button from '@material-ui/core/Button';
+import Box from '@material-ui/core/Box';
+//import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 import Layout, { siteTitle } from '../components/layout'
 import * as utilStyles from '../styles/utils.css'
 import { getSortedPostsData } from '../lib/posts'
 import Date from '../components/date'
+import { Button } from '../components/button';
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Button variant="contained" color="primary">Default</Button>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
+        <Typography variant="body1">[Your Self Introduction]</Typography>
+        <Typography
+          variant="body1">
           (This is a sample website - you’ll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        </Typography>
       </section>
+      <Box
+        py={3}
+        display="flex"
+        justifyContent="center">
+        <Button
+          type="error"
+          variant="contained"
+          color="primary">
+          I’m a button
+        </Button>
+      </Box>
       <section className={cx(utilStyles.headingMd, utilStyles.padding1px)}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

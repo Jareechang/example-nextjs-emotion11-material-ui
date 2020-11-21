@@ -21,6 +21,7 @@ repo is built upon [example-nextjs-emotion11](https://github.com/Jareechang/exam
 
 ### Technologies
 
-- emotion @ 11.0
-- material-ui @ 4.11
-- next @ 10.x
+- [emotion](https://emotion.sh/docs/@emotion/css) @ 11.0
+- [material-ui](https://material-ui.com/) @ 4.11
+- [next](https://nextjs.org/docs/getting-started) @ 10.x
+- [polished](https://polished.js.org/docs/) @ 4.x

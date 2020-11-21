@@ -1,5 +1,6 @@
 import { css } from '@emotion/css'
 
+
 export const heading2Xl = css`
   font-size: 2.5rem;
   line-height: 1.2;

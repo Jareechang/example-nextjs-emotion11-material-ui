@@ -14,15 +14,14 @@ export default function App({ Component, pageProps }) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
-
-    return (
-      <StylesProvider injectFirst>
-        <ThemeProvider theme={theme}>
-          <CacheProvider value={cache}>
-            {globalStyles}
-            <Component {...pageProps} />
-          </CacheProvider>
-        </ThemeProvider >
-      </StylesProvider>
-    );
+  return (
+    <StylesProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <CacheProvider value={cache}>
+          {globalStyles}
+          <Component {...pageProps} />
+        </CacheProvider>
+      </ThemeProvider >
+    </StylesProvider>
+  );
 }
