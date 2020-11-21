@@ -6,6 +6,8 @@ Using [emotion](https://emotion.sh/docs/introduction) integrated with [material-
 
 Also, includes Server side rendering.
 
+repo is built upon [example-nextjs-emotion11](https://github.com/Jareechang/example-nextjs-emotion11).
+
 ### Getting Started
 
 
