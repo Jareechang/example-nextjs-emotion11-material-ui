@@ -4,7 +4,6 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import { StylesProvider } from '@material-ui/core/styles';
 
 import theme from '../styles/material-ui/theme';
-import { globalStyles } from '../styles/global.css';
 
 export default function App({ Component, pageProps }) {
   React.useEffect(() => {
@@ -18,7 +17,6 @@ export default function App({ Component, pageProps }) {
     <StylesProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CacheProvider value={cache}>
-          {globalStyles}
           <Component {...pageProps} />
         </CacheProvider>
       </ThemeProvider >

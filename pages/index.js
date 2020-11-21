@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { css, cx } from '@emotion/css'
 import Box from '@material-ui/core/Box';
-//import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Layout, { siteTitle } from '../components/layout'
 import * as utilStyles from '../styles/utils.css'
